@@ -1,4 +1,4 @@
-package com.makeus.blive.tab_home;
+package com.makeus.blive.src.tab_home;
 
 import android.os.Bundle;
 

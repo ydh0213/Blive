@@ -1,4 +1,4 @@
-package com.makeus.blive;
+package com.makeus.blive.src;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,7 +9,8 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.makeus.blive.tab_home.HomeFragment;
+import com.makeus.blive.R;
+import com.makeus.blive.src.tab_home.HomeFragment;
 
 public class MainActivity extends AppCompatActivity {
     private FragmentManager fragmentManager = getSupportFragmentManager();
