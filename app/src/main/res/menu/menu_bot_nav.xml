@@ -2,16 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/home"
-        android:title="@string/home" />
+        android:title="@string/home"
+        android:icon="@drawable/selector_ic_home"/>
     <item
         android:id="@+id/explore"
-        android:title="@string/explore"/>
+        android:title="@string/explore"
+        android:icon="@drawable/selector_ic_search"/>
     <item
         android:id="@+id/add"
-        android:title="@string/add"/>
+        android:title="@string/add"
+        android:icon="@drawable/selector_ic_add"/>
     <item
         android:id="@+id/library"
-        android:title="@string/library"/>
+        android:title="@string/library"
+        android:icon="@drawable/selector_ic_favorite"/>
     <item
         android:id="@+id/my_profile"
         android:title="@string/my_profile"/>
