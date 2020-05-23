@@ -18,5 +18,6 @@
         android:icon="@drawable/selector_ic_favorite"/>
     <item
         android:id="@+id/my_profile"
-        android:title="@string/my_profile"/>
+        android:title="@string/my_profile"
+        android:icon="@drawable/selector_ic_my_profile"/>
 </menu>
