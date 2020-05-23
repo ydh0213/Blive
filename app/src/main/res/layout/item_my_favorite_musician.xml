@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+
+    <ImageView
+        android:id="@+id/my_favorite_iv_profile_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/ic_launcher"/>
+
+    <ImageView
+        android:id="@+id/my_favorite_iv_profile_dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/my_favorite_iv_profile_photo"
+        app:layout_constraintEnd_toEndOf="@+id/my_favorite_iv_profile_photo"
+        android:src="@drawable/ic_dot_inactive"/>
+
+    <TextView
+        android:id="@+id/my_favorite_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/my_favorite_iv_profile_photo"
+        app:layout_constraintStart_toStartOf="@+id/my_favorite_iv_profile_photo"
+        app:layout_constraintEnd_toEndOf="@+id/my_favorite_iv_profile_photo"
+        android:fontFamily="@font/font_noto_sans_kr_medium"
+        android:textColor="@color/dark_navy"
+        android:text="가수이름"/>
+
+    <ImageView
+        android:id="@+id/my_favorite_iv_pin_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/my_favorite_tv_name"
+        app:layout_constraintStart_toStartOf="@+id/my_favorite_iv_profile_photo"
+        app:layout_constraintEnd_toStartOf="@+id/my_favorite_tv_location"
+        android:src="@drawable/ic_pin_inactive"/>
+
+    <TextView
+        android:id="@+id/my_favorite_tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_inactive"
+        app:layout_constraintTop_toTopOf="@+id/my_favorite_iv_pin_icon"
+        app:layout_constraintBottom_toBottomOf="@id/my_favorite_iv_pin_icon"
+        app:layout_constraintStart_toEndOf="@+id/my_favorite_iv_pin_icon"
+        app:layout_constraintEnd_toEndOf="@+id/my_favorite_tv_name"
+        android:textSize="10sp"
+        android:text="마포구 서교동"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

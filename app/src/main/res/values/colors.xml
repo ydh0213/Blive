@@ -8,5 +8,6 @@
     <color name="color_inactive">#B0BEC5</color>
     <color name="color_active">#673ab7</color>
     <color name="dark_navy">#37474f</color>
+    <color name="light_green">#a7ff02</color>
 
 </resources>
