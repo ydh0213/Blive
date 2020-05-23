@@ -1,0 +1,2 @@
+rootProject.name='Blive'
+include ':app'
