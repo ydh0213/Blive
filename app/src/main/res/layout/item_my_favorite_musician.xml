@@ -4,7 +4,8 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingTop="20dp"
-    android:paddingBottom="20dp">
+    android:paddingBottom="20dp"
+    android:paddingStart="5dp">
 
     <ImageView
         android:id="@+id/my_favorite_iv_profile_photo"
@@ -19,7 +20,8 @@
     <ImageView
         android:id="@+id/my_favorite_iv_profile_dot"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="18dp"
+        android:adjustViewBounds="true"
         app:layout_constraintTop_toTopOf="@+id/my_favorite_iv_profile_photo"
         app:layout_constraintEnd_toEndOf="@+id/my_favorite_iv_profile_photo"
         android:src="@drawable/ic_dot_inactive"/>
@@ -33,12 +35,14 @@
         app:layout_constraintEnd_toEndOf="@+id/my_favorite_iv_profile_photo"
         android:fontFamily="@font/font_noto_sans_kr_medium"
         android:textColor="@color/dark_navy"
+        android:textSize="16sp"
         android:text="가수이름"/>
 
     <ImageView
         android:id="@+id/my_favorite_iv_pin_icon"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="12dp"
+        android:adjustViewBounds="true"
         app:layout_constraintTop_toBottomOf="@+id/my_favorite_tv_name"
         app:layout_constraintStart_toStartOf="@+id/my_favorite_iv_profile_photo"
         app:layout_constraintEnd_toStartOf="@+id/my_favorite_tv_location"
@@ -53,7 +57,7 @@
         app:layout_constraintBottom_toBottomOf="@id/my_favorite_iv_pin_icon"
         app:layout_constraintStart_toEndOf="@+id/my_favorite_iv_pin_icon"
         app:layout_constraintEnd_toEndOf="@+id/my_favorite_tv_name"
-        android:textSize="10sp"
+        android:textSize="11sp"
         android:text="마포구 서교동"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
