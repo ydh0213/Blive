@@ -57,6 +57,7 @@
         app:layout_constraintBottom_toBottomOf="@id/my_favorite_iv_pin_icon"
         app:layout_constraintStart_toEndOf="@+id/my_favorite_iv_pin_icon"
         app:layout_constraintEnd_toEndOf="@+id/my_favorite_tv_name"
+        android:fontFamily="@font/font_noto_sans_kr_regular"
         android:textSize="11sp"
         android:text="마포구 서교동"/>
 

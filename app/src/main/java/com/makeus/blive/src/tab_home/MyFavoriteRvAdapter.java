@@ -33,9 +33,7 @@ class MyFavoriteRvAdapter extends RecyclerView.Adapter<MyFavoriteRvAdapter.MyFav
     public void add(MusicianInfo musicianInfo) { myFavoriteList.add(musicianInfo); }
 
     @Override
-    public int getItemCount() {
-        return myFavoriteList.size();
-    }
+    public int getItemCount() { return myFavoriteList.size(); }
 
     public class MyFavoriteViewHolder extends RecyclerView.ViewHolder {
         ImageView ivProfilePhoto;

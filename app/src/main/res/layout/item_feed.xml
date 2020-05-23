@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="10dp"
+    android:paddingBottom="5dp">
+
+    <ImageView
+        android:id="@+id/feed_iv_profile_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/feed_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/feed_iv_profile_photo"
+        app:layout_constraintTop_toTopOf="@+id/feed_iv_profile_photo"
+        app:layout_constraintBottom_toBottomOf="@+id/feed_iv_profile_photo"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/dark_navy"
+        android:fontFamily="@font/font_noto_sans_kr_medium"
+        android:text="가수이름"/>
+
+    <ImageView
+        android:id="@+id/feed_iv_pin_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toStartOf="@+id/feed_tv_location"
+        app:layout_constraintTop_toTopOf="@+id/feed_tv_location"
+        app:layout_constraintBottom_toBottomOf="@+id/feed_tv_location"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/ic_pin_active"/>
+
+    <TextView
+        android:id="@+id/feed_tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_active"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/font_noto_sans_kr_regular"
+        android:textSize="12sp"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:text="속초시"/>
+
+    <TextView
+        android:id="@+id/feed_tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/feed_tv_location"
+        app:layout_constraintTop_toBottomOf="@+id/feed_tv_location"
+        android:textColor="@color/color_inactive"
+        android:fontFamily="@font/font_noto_sans_kr_regular"
+        android:textSize="12sp"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:text="2주 전" />
+
+    <VideoView
+        android:id="@+id/feed_vv"
+        android:layout_width="0dp"
+        android:layout_height="231.4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feed_iv_profile_photo"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/feed_iv_people_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/feed_iv_profile_photo"
+        app:layout_constraintTop_toBottomOf="@+id/feed_vv"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_people"/>
+
+    <TextView
+        android:id="@+id/feed_tv_people_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/feed_iv_people_icon"
+        app:layout_constraintTop_toTopOf="@+id/feed_iv_people_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/feed_iv_people_icon"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/color_inactive"
+        android:fontFamily="@font/font_noto_sans_kr_regular"
+        android:text="30"/>
+
+    <ImageView
+        android:id="@+id/feed_iv_heart_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/feed_tv_people_count"
+        app:layout_constraintTop_toTopOf="@+id/feed_iv_people_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/feed_iv_people_icon"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_favorite_inactive"/>
+
+    <TextView
+        android:id="@+id/feed_tv_heart_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/feed_iv_heart_icon"
+        app:layout_constraintTop_toTopOf="@+id/feed_iv_people_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/feed_iv_people_icon"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/color_inactive"
+        android:fontFamily="@font/font_noto_sans_kr_regular"
+        android:text="100"/>
+
+    <ImageView
+        android:id="@+id/feed_iv_music_note_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/feed_tv_heart_count"
+        app:layout_constraintTop_toTopOf="@+id/feed_iv_people_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/feed_iv_people_icon"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_music_note"/>
+
+    <TextView
+        android:id="@+id/feed_tv_music_note_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/feed_iv_music_note_icon"
+        app:layout_constraintTop_toTopOf="@+id/feed_iv_people_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/feed_iv_people_icon"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/color_inactive"
+        android:fontFamily="@font/font_noto_sans_kr_regular"
+        android:text="50"/>
+
+    <TextView
+        android:id="@+id/feed_tv_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/feed_iv_people_icon"
+        app:layout_constraintStart_toStartOf="@+id/feed_iv_profile_photo"
+        app:layout_constraintEnd_toEndOf="@+id/feed_tv_location"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/dark_navy"
+        android:fontFamily="@font/font_noto_sans_kr_medium"
+        android:text="5월 10일 바닷가 라이브 영상입니다. 바람도 좋고 파도도 좋고 하늘도 좋았던 완벽한 날이에요 :)"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
