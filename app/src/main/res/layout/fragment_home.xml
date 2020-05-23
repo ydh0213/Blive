@@ -1,7 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".src.tab_home.HomeFragment"/>
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".src.tab_home.HomeFragment"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="43.5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/home_tv_title_busker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="23.3dp"
+            android:textColor="@color/dark_navy"
+            android:fontFamily="@font/font_noto_sans_kr_bold"
+            android:textSize="24sp"
+            android:text="버스커"/>
+
+        <TextView
+            android:id="@+id/home_tv_title_live"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/home_tv_title_busker"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/font_noto_sans_kr_bold"
+            android:textSize="24sp"
+            android:text="Live"/>
+
+        <ImageView
+            android:layout_width="9.3dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:layout_constraintTop_toTopOf="@+id/home_tv_title_live"
+            app:layout_constraintStart_toEndOf="@+id/home_tv_title_live"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_dot_active"/>
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="21.5dp"
+            android:src="@drawable/ic_bell"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
