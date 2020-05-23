@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+    <item
+        android:id="@+id/home"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/explore"
+        android:title="@string/explore"/>
+    <item
+        android:id="@+id/add"
+        android:title="@string/add"/>
+    <item
+        android:id="@+id/library"
+        android:title="@string/library"/>
+    <item
+        android:id="@+id/my_profile"
+        android:title="@string/my_profile"/>
 </menu>
