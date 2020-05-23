@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".src.live.LiveActivity">
+
+
+    <VideoView
+        android:id="@+id/live_vv"
+        android:layout_width="0dp"
+        android:layout_height="231.4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/live_iv_pin_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/live_vv"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:tint="@color/dark_navy"
+        android:src="@drawable/ic_pin_inactive"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/live_iv_pin_icon"
+        app:layout_constraintTop_toTopOf="@+id/live_iv_pin_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/live_iv_pin_icon"
+        android:textColor="@color/dark_navy"
+        android:fontFamily="@font/font_noto_sans_kr_medium"
+        android:text="속초 바닷가" />
+
+    <ImageView
+        android:id="@+id/live_iv_people_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/live_tv_people_count"
+        app:layout_constraintTop_toTopOf="@+id/live_iv_music_note_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/live_tv_music_note_count"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/ic_people"/>
+
+    <TextView
+        android:id="@+id/live_tv_people_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/live_iv_heart_icon"
+        app:layout_constraintTop_toTopOf="@+id/live_iv_music_note_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/live_tv_music_note_count"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/color_inactive"
+        android:fontFamily="@font/font_noto_sans_kr_regular"
+        android:text="30"/>
+
+    <ImageView
+        android:id="@+id/live_iv_heart_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/live_tv_heart_count"
+        app:layout_constraintTop_toTopOf="@+id/live_iv_music_note_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/live_tv_music_note_count"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/ic_favorite_inactive"/>
+
+    <TextView
+        android:id="@+id/live_tv_heart_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/live_iv_music_note_icon"
+        app:layout_constraintTop_toTopOf="@+id/live_iv_music_note_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/live_tv_music_note_count"
+        android:layout_marginEnd="10dp"
+        android:textColor="@color/color_inactive"
+        android:fontFamily="@font/font_noto_sans_kr_regular"
+        android:text="100"/>
+
+    <ImageView
+        android:id="@+id/live_iv_music_note_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/live_tv_music_note_count"
+        app:layout_constraintTop_toTopOf="@+id/live_tv_music_note_count"
+        app:layout_constraintBottom_toBottomOf="@+id/live_tv_music_note_count"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/ic_music_note"/>
+
+    <TextView
+        android:id="@+id/live_tv_music_note_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/live_iv_pin_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/color_inactive"
+        android:fontFamily="@font/font_noto_sans_kr_regular"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="0dp"
+        android:text="50"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/live_iv_pin_icon"
+        android:background="@color/bg_color">
+
+        <TextView
+            android:id="@+id/live_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:textColor="@color/dark_navy"
+            android:fontFamily="@font/font_noto_sans_kr_bold"
+            android:text="가수이름"/>
+
+        <TextView
+            android:id="@+id/live_tv_genre_and_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/live_tv_name"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:includeFontPadding="false"
+            android:lineSpacingExtra="0dp"
+            android:textColor="@color/color_inactive"
+            android:fontFamily="@font/font_noto_sans_kr_regular"
+            android:text="발라드 | 한국"/>
+
+        <ImageView
+            android:id="@+id/live_iv_profile_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:adjustViewBounds="true"
+            app:layout_constraintStart_toStartOf="@+id/live_tv_name"
+            app:layout_constraintTop_toBottomOf="@+id/live_tv_name"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_launcher"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

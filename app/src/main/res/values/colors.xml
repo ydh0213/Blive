@@ -9,5 +9,6 @@
     <color name="color_active">#673ab7</color>
     <color name="dark_navy">#37474f</color>
     <color name="light_green">#a7ff02</color>
+    <color name="bg_color">#f9f8fc</color>
 
 </resources>

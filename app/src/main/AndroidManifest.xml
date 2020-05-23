@@ -14,9 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-        tools:ignore="GoogleAppIndexingWarning"
         android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
         tools:targetApi="n">
+        <activity android:name=".src.live.LiveActivity"></activity>
         <activity
             android:name=".src.splash.SplashActivity"
             android:screenOrientation="portrait"
