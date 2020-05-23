@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/home"
+        android:id="@+id/item_home"
         android:title="@string/home"
         android:icon="@drawable/selector_ic_home"/>
     <item
-        android:id="@+id/explore"
+        android:id="@+id/item_explore"
         android:title="@string/explore"
         android:icon="@drawable/selector_ic_search"/>
     <item
-        android:id="@+id/add"
+        android:id="@+id/item_add"
         android:title="@string/add"
         android:icon="@drawable/selector_ic_add"/>
     <item
-        android:id="@+id/library"
+        android:id="@+id/item_library"
         android:title="@string/library"
         android:icon="@drawable/selector_ic_favorite"/>
     <item
-        android:id="@+id/my_profile"
+        android:id="@+id/item_my_profile"
         android:title="@string/my_profile"
         android:icon="@drawable/selector_ic_my_profile"/>
 </menu>
